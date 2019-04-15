@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<litepal>
+    <dbname value="cityList" />
+    <version value="1" />
+    <list>
+        <mapping class="com.example.dbjsonstudy.db.Province" />
+        <mapping class="com.example.dbjsonstudy.db.City" />
+        <mapping class="com.example.dbjsonstudy.db.County" />
+
+    </list>
+</litepal>
