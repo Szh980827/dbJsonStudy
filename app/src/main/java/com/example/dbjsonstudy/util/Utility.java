@@ -21,9 +21,12 @@ public class Utility {
 	public static boolean handleProvinceResponse(String response) {
 		if (!TextUtils.isEmpty(response)) {
 			try {
-				JSONArray allProvince = new JSONArray(response);
-				for (int i = 0; i < allProvince.length(); i++) {
-					JSONObject provinceObject = allProvince.getJSONObject(i);
+				/*
+				 * 解析 Json 数据
+				 */
+				JSONArray allProvinces = new JSONArray(response);
+				for (int i = 0; i < allProvinces.length(); i++) {
+					JSONObject provinceObject = allProvinces.getJSONObject(i);
 					Province province = new Province();
 					province.setProvinceName(provinceObject.getString("name"));
 					province.setProvinceCode(provinceObject.getInt("id"));
